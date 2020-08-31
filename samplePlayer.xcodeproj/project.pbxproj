@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAC1C4531FE3941200CE2615 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC1C4521FE3941200CE2615 /* AppDelegate.m */; };
+		AAC1C4561FE3941200CE2615 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC1C4551FE3941200CE2615 /* ViewController.m */; };
+		AAC1C4591FE3941200CE2615 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC1C4571FE3941200CE2615 /* Main.storyboard */; };
+		AAC1C45B1FE3941200CE2615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC1C45A1FE3941200CE2615 /* Assets.xcassets */; };
+		AAC1C45E1FE3941200CE2615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC1C45C1FE3941200CE2615 /* LaunchScreen.storyboard */; };
+		AAC1C4611FE3941200CE2615 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC1C4601FE3941200CE2615 /* main.m */; };
+		B6EEC0E924E4E2190087BD21 /* WecandeoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0E824E4E2190087BD21 /* WecandeoSDK.framework */; };
+		B6EEC0EA24E4E2190087BD21 /* WecandeoSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0E824E4E2190087BD21 /* WecandeoSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6EEC0EF24E4E2220087BD21 /* widevine_cdm_sdk_release.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0EC24E4E2220087BD21 /* widevine_cdm_sdk_release.framework */; };
+		B6EEC0F024E4E2220087BD21 /* widevine_cdm_sdk_release.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0EC24E4E2220087BD21 /* widevine_cdm_sdk_release.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6EEC0F124E4E2220087BD21 /* widevine_cdm_sdk_insecure_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0ED24E4E2220087BD21 /* widevine_cdm_sdk_insecure_dev.framework */; };
+		B6EEC0F224E4E2220087BD21 /* widevine_cdm_sdk_insecure_dev.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0ED24E4E2220087BD21 /* widevine_cdm_sdk_insecure_dev.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6EEC0F324E4E2220087BD21 /* widevine_cdm_sdk_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0EE24E4E2220087BD21 /* widevine_cdm_sdk_dev.framework */; };
+		B6EEC0F424E4E2220087BD21 /* widevine_cdm_sdk_dev.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0EE24E4E2220087BD21 /* widevine_cdm_sdk_dev.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6FC101D24FC92A90002F380 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FC101B24FC92A90002F380 /* Network.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B6EEC0EB24E4E2190087BD21 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B6EEC0EA24E4E2190087BD21 /* WecandeoSDK.framework in Embed Frameworks */,
+				B6EEC0F024E4E2220087BD21 /* widevine_cdm_sdk_release.framework in Embed Frameworks */,
+				B6EEC0F224E4E2220087BD21 /* widevine_cdm_sdk_insecure_dev.framework in Embed Frameworks */,
+				B6EEC0F424E4E2220087BD21 /* widevine_cdm_sdk_dev.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AAC1C44E1FE3941200CE2615 /* samplePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = samplePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC1C4511FE3941200CE2615 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AAC1C4521FE3941200CE2615 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AAC1C4541FE3941200CE2615 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AAC1C4551FE3941200CE2615 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AAC1C4581FE3941200CE2615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAC1C45A1FE3941200CE2615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAC1C45D1FE3941200CE2615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAC1C45F1FE3941200CE2615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC1C4601FE3941200CE2615 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6EEC0E824E4E2190087BD21 /* WecandeoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WecandeoSDK.framework; sourceTree = "<group>"; };
+		B6EEC0EC24E4E2220087BD21 /* widevine_cdm_sdk_release.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = widevine_cdm_sdk_release.framework; path = WecandeoSDK.framework/Frameworks/widevine_cdm_sdk_release.framework; sourceTree = "<group>"; };
+		B6EEC0ED24E4E2220087BD21 /* widevine_cdm_sdk_insecure_dev.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = widevine_cdm_sdk_insecure_dev.framework; path = WecandeoSDK.framework/Frameworks/widevine_cdm_sdk_insecure_dev.framework; sourceTree = "<group>"; };
+		B6EEC0EE24E4E2220087BD21 /* widevine_cdm_sdk_dev.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = widevine_cdm_sdk_dev.framework; path = WecandeoSDK.framework/Frameworks/widevine_cdm_sdk_dev.framework; sourceTree = "<group>"; };
+		B6FC101B24FC92A90002F380 /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		B6FC101C24FC92A90002F380 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAC1C44B1FE3941200CE2615 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6EEC0E924E4E2190087BD21 /* WecandeoSDK.framework in Frameworks */,
+				B6EEC0EF24E4E2220087BD21 /* widevine_cdm_sdk_release.framework in Frameworks */,
+				B6EEC0F124E4E2220087BD21 /* widevine_cdm_sdk_insecure_dev.framework in Frameworks */,
+				B6EEC0F324E4E2220087BD21 /* widevine_cdm_sdk_dev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAC1C4451FE3941200CE2615 = {
+			isa = PBXGroup;
+			children = (
+				AAC1C4501FE3941200CE2615 /* samplePlayer */,
+				AAC1C44F1FE3941200CE2615 /* Products */,
+				B6EEC0E724E4E2190087BD21 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AAC1C44F1FE3941200CE2615 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAC1C44E1FE3941200CE2615 /* samplePlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAC1C4501FE3941200CE2615 /* samplePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				B6FC101C24FC92A90002F380 /* Network.h */,
+				B6FC101B24FC92A90002F380 /* Network.m */,
+				AAC1C4511FE3941200CE2615 /* AppDelegate.h */,
+				AAC1C4521FE3941200CE2615 /* AppDelegate.m */,
+				AAC1C4541FE3941200CE2615 /* ViewController.h */,
+				AAC1C4551FE3941200CE2615 /* ViewController.m */,
+				AAC1C4571FE3941200CE2615 /* Main.storyboard */,
+				AAC1C45A1FE3941200CE2615 /* Assets.xcassets */,
+				AAC1C45C1FE3941200CE2615 /* LaunchScreen.storyboard */,
+				AAC1C45F1FE3941200CE2615 /* Info.plist */,
+				AAC1C4601FE3941200CE2615 /* main.m */,
+			);
+			path = samplePlayer;
+			sourceTree = "<group>";
+		};
+		B6EEC0E724E4E2190087BD21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6EEC0EE24E4E2220087BD21 /* widevine_cdm_sdk_dev.framework */,
+				B6EEC0ED24E4E2220087BD21 /* widevine_cdm_sdk_insecure_dev.framework */,
+				B6EEC0EC24E4E2220087BD21 /* widevine_cdm_sdk_release.framework */,
+				B6EEC0E824E4E2190087BD21 /* WecandeoSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAC1C44D1FE3941200CE2615 /* samplePlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC1C4641FE3941200CE2615 /* Build configuration list for PBXNativeTarget "samplePlayer" */;
+			buildPhases = (
+				AAC1C44A1FE3941200CE2615 /* Sources */,
+				AAC1C44B1FE3941200CE2615 /* Frameworks */,
+				AAC1C44C1FE3941200CE2615 /* Resources */,
+				B6EEC0EB24E4E2190087BD21 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = samplePlayer;
+			productName = DRMPlayer;
+			productReference = AAC1C44E1FE3941200CE2615 /* samplePlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAC1C4461FE3941200CE2615 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = ScenappsM;
+				TargetAttributes = {
+					AAC1C44D1FE3941200CE2615 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AAC1C4491FE3941200CE2615 /* Build configuration list for PBXProject "samplePlayer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAC1C4451FE3941200CE2615;
+			productRefGroup = AAC1C44F1FE3941200CE2615 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAC1C44D1FE3941200CE2615 /* samplePlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAC1C44C1FE3941200CE2615 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC1C45E1FE3941200CE2615 /* LaunchScreen.storyboard in Resources */,
+				AAC1C45B1FE3941200CE2615 /* Assets.xcassets in Resources */,
+				AAC1C4591FE3941200CE2615 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAC1C44A1FE3941200CE2615 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAC1C4561FE3941200CE2615 /* ViewController.m in Sources */,
+				AAC1C4611FE3941200CE2615 /* main.m in Sources */,
+				B6FC101D24FC92A90002F380 /* Network.m in Sources */,
+				AAC1C4531FE3941200CE2615 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AAC1C4571FE3941200CE2615 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAC1C4581FE3941200CE2615 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAC1C45C1FE3941200CE2615 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAC1C45D1FE3941200CE2615 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAC1C4621FE3941200CE2615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AAC1C4631FE3941200CE2615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAC1C4651FE3941200CE2615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JJL72962EQ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/WecandeoSDK.framework/Frameworks",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/SamplePlayer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scenappsm.samplePlayer;
+				PRODUCT_NAME = samplePlayer;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAC1C4661FE3941200CE2615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JJL72962EQ;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/WecandeoSDK.framework/Frameworks",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/SamplePlayer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.scenappsm.samplePlayer;
+				PRODUCT_NAME = samplePlayer;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAC1C4491FE3941200CE2615 /* Build configuration list for PBXProject "samplePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC1C4621FE3941200CE2615 /* Debug */,
+				AAC1C4631FE3941200CE2615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAC1C4641FE3941200CE2615 /* Build configuration list for PBXNativeTarget "samplePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAC1C4651FE3941200CE2615 /* Debug */,
+				AAC1C4661FE3941200CE2615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAC1C4461FE3941200CE2615 /* Project object */;
+}
