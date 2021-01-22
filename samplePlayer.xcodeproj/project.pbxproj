@@ -13,14 +13,14 @@
 		AAC1C45B1FE3941200CE2615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC1C45A1FE3941200CE2615 /* Assets.xcassets */; };
 		AAC1C45E1FE3941200CE2615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC1C45C1FE3941200CE2615 /* LaunchScreen.storyboard */; };
 		AAC1C4611FE3941200CE2615 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC1C4601FE3941200CE2615 /* main.m */; };
-		B6EEC0E924E4E2190087BD21 /* WecandeoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0E824E4E2190087BD21 /* WecandeoSDK.framework */; };
-		B6EEC0EA24E4E2190087BD21 /* WecandeoSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0E824E4E2190087BD21 /* WecandeoSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B6EEC0EF24E4E2220087BD21 /* widevine_cdm_sdk_release.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0EC24E4E2220087BD21 /* widevine_cdm_sdk_release.framework */; };
-		B6EEC0F024E4E2220087BD21 /* widevine_cdm_sdk_release.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0EC24E4E2220087BD21 /* widevine_cdm_sdk_release.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B6EEC0F124E4E2220087BD21 /* widevine_cdm_sdk_insecure_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0ED24E4E2220087BD21 /* widevine_cdm_sdk_insecure_dev.framework */; };
-		B6EEC0F224E4E2220087BD21 /* widevine_cdm_sdk_insecure_dev.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0ED24E4E2220087BD21 /* widevine_cdm_sdk_insecure_dev.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B6EEC0F324E4E2220087BD21 /* widevine_cdm_sdk_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0EE24E4E2220087BD21 /* widevine_cdm_sdk_dev.framework */; };
-		B6EEC0F424E4E2220087BD21 /* widevine_cdm_sdk_dev.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0EE24E4E2220087BD21 /* widevine_cdm_sdk_dev.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6AB558A25BAC57300E0189E /* WecandeoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0E824E4E2190087BD21 /* WecandeoSDK.framework */; };
+		B6AB558B25BAC57300E0189E /* WecandeoSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6EEC0E824E4E2190087BD21 /* WecandeoSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6BA522C25BAC6FA002D320C /* widevine_cdm_sdk_insecure_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BA522925BAC6F9002D320C /* widevine_cdm_sdk_insecure_dev.framework */; };
+		B6BA522D25BAC6FA002D320C /* widevine_cdm_sdk_insecure_dev.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6BA522925BAC6F9002D320C /* widevine_cdm_sdk_insecure_dev.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6BA522E25BAC6FA002D320C /* widevine_cdm_sdk_release.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BA522A25BAC6FA002D320C /* widevine_cdm_sdk_release.framework */; };
+		B6BA522F25BAC6FA002D320C /* widevine_cdm_sdk_release.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6BA522A25BAC6FA002D320C /* widevine_cdm_sdk_release.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6BA523025BAC6FA002D320C /* widevine_cdm_sdk_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BA522B25BAC6FA002D320C /* widevine_cdm_sdk_dev.framework */; };
+		B6BA523125BAC6FA002D320C /* widevine_cdm_sdk_dev.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6BA522B25BAC6FA002D320C /* widevine_cdm_sdk_dev.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B6FC101D24FC92A90002F380 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FC101B24FC92A90002F380 /* Network.m */; };
 /* End PBXBuildFile section */
 
@@ -31,10 +31,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B6EEC0EA24E4E2190087BD21 /* WecandeoSDK.framework in Embed Frameworks */,
-				B6EEC0F024E4E2220087BD21 /* widevine_cdm_sdk_release.framework in Embed Frameworks */,
-				B6EEC0F224E4E2220087BD21 /* widevine_cdm_sdk_insecure_dev.framework in Embed Frameworks */,
-				B6EEC0F424E4E2220087BD21 /* widevine_cdm_sdk_dev.framework in Embed Frameworks */,
+				B6AB558B25BAC57300E0189E /* WecandeoSDK.framework in Embed Frameworks */,
+				B6BA522F25BAC6FA002D320C /* widevine_cdm_sdk_release.framework in Embed Frameworks */,
+				B6BA522D25BAC6FA002D320C /* widevine_cdm_sdk_insecure_dev.framework in Embed Frameworks */,
+				B6BA523125BAC6FA002D320C /* widevine_cdm_sdk_dev.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,10 +52,10 @@
 		AAC1C45D1FE3941200CE2615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAC1C45F1FE3941200CE2615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAC1C4601FE3941200CE2615 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6BA522925BAC6F9002D320C /* widevine_cdm_sdk_insecure_dev.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = widevine_cdm_sdk_insecure_dev.framework; path = WecandeoSDK.framework/Frameworks/widevine_cdm_sdk_insecure_dev.framework; sourceTree = "<group>"; };
+		B6BA522A25BAC6FA002D320C /* widevine_cdm_sdk_release.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = widevine_cdm_sdk_release.framework; path = WecandeoSDK.framework/Frameworks/widevine_cdm_sdk_release.framework; sourceTree = "<group>"; };
+		B6BA522B25BAC6FA002D320C /* widevine_cdm_sdk_dev.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = widevine_cdm_sdk_dev.framework; path = WecandeoSDK.framework/Frameworks/widevine_cdm_sdk_dev.framework; sourceTree = "<group>"; };
 		B6EEC0E824E4E2190087BD21 /* WecandeoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WecandeoSDK.framework; sourceTree = "<group>"; };
-		B6EEC0EC24E4E2220087BD21 /* widevine_cdm_sdk_release.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = widevine_cdm_sdk_release.framework; path = WecandeoSDK.framework/Frameworks/widevine_cdm_sdk_release.framework; sourceTree = "<group>"; };
-		B6EEC0ED24E4E2220087BD21 /* widevine_cdm_sdk_insecure_dev.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = widevine_cdm_sdk_insecure_dev.framework; path = WecandeoSDK.framework/Frameworks/widevine_cdm_sdk_insecure_dev.framework; sourceTree = "<group>"; };
-		B6EEC0EE24E4E2220087BD21 /* widevine_cdm_sdk_dev.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = widevine_cdm_sdk_dev.framework; path = WecandeoSDK.framework/Frameworks/widevine_cdm_sdk_dev.framework; sourceTree = "<group>"; };
 		B6FC101B24FC92A90002F380 /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
 		B6FC101C24FC92A90002F380 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,10 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6EEC0E924E4E2190087BD21 /* WecandeoSDK.framework in Frameworks */,
-				B6EEC0EF24E4E2220087BD21 /* widevine_cdm_sdk_release.framework in Frameworks */,
-				B6EEC0F124E4E2220087BD21 /* widevine_cdm_sdk_insecure_dev.framework in Frameworks */,
-				B6EEC0F324E4E2220087BD21 /* widevine_cdm_sdk_dev.framework in Frameworks */,
+				B6AB558A25BAC57300E0189E /* WecandeoSDK.framework in Frameworks */,
+				B6BA522E25BAC6FA002D320C /* widevine_cdm_sdk_release.framework in Frameworks */,
+				B6BA522C25BAC6FA002D320C /* widevine_cdm_sdk_insecure_dev.framework in Frameworks */,
+				B6BA523025BAC6FA002D320C /* widevine_cdm_sdk_dev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,9 +113,9 @@
 		B6EEC0E724E4E2190087BD21 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B6EEC0EE24E4E2220087BD21 /* widevine_cdm_sdk_dev.framework */,
-				B6EEC0ED24E4E2220087BD21 /* widevine_cdm_sdk_insecure_dev.framework */,
-				B6EEC0EC24E4E2220087BD21 /* widevine_cdm_sdk_release.framework */,
+				B6BA522B25BAC6FA002D320C /* widevine_cdm_sdk_dev.framework */,
+				B6BA522925BAC6F9002D320C /* widevine_cdm_sdk_insecure_dev.framework */,
+				B6BA522A25BAC6FA002D320C /* widevine_cdm_sdk_release.framework */,
 				B6EEC0E824E4E2190087BD21 /* WecandeoSDK.framework */,
 			);
 			name = Frameworks;

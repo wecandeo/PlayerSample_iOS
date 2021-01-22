@@ -11,21 +11,25 @@
 #import <WecandeoSDK/WecandeoSDK.h>
 #import "Network.h"
 
-@interface ViewController () <WCPlayerDelegate> {
+@interface ViewController () <WCPlayerDelegate, UIPickerViewDelegate, UIPickerViewDataSource> {
     Boolean isVod;
+    NSArray *vGravities;
 }
 
 @property (strong, nonatomic) WCPlayer *player;
 @property (strong, nonatomic) PlayerController *controller;
 @property (assign, nonatomic) CGFloat currentVol;
 
+@property (weak, nonatomic) IBOutlet UIView *playerView;
 @property (weak, nonatomic) IBOutlet UIButton *btPause;
 @property (weak, nonatomic) IBOutlet UIButton *btRetry;
 @property (weak, nonatomic) IBOutlet UIButton *btRewind;
 @property (weak, nonatomic) IBOutlet UIButton *btForward;
 @property (weak, nonatomic) IBOutlet UILabel *playerStatus;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *videoGravityLabel;
 @property (weak, nonatomic) IBOutlet UISlider *seekbar;
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 
 @end
 
@@ -36,6 +40,8 @@
     // Do any additional setup after loading the view, typically from a nib.
 
     isVod = true;
+    vGravities = [NSArray arrayWithObjects:AVLayerVideoGravityResize, AVLayerVideoGravityResizeAspect, AVLayerVideoGravityResizeAspectFill, nil];
+    
     [self initController];
     struct RequestInfo reqInfo = [self reqestInfo];
     
@@ -48,12 +54,12 @@
             }
             
             [self.controller.view setTranslatesAutoresizingMaskIntoConstraints:NO];
-            [self.view addSubview:self.controller.view];
+            [self.playerView addSubview:self.controller.view];
             
-            [self.controller.view.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = YES;
-            [self.controller.view.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = YES;
-            [self.controller.view.topAnchor constraintEqualToAnchor:self.topLayoutGuide.bottomAnchor].active = YES;
-            [self.controller.view.heightAnchor constraintEqualToAnchor:self.controller.view.widthAnchor multiplier:0.5625].active = YES;
+            [self.controller.view.leadingAnchor constraintEqualToAnchor:self.playerView.leadingAnchor].active = YES;
+            [self.controller.view.trailingAnchor constraintEqualToAnchor:self.playerView.trailingAnchor].active = YES;
+            [self.controller.view.topAnchor constraintEqualToAnchor:self.playerView.topAnchor].active = YES;
+            [self.controller.view.bottomAnchor constraintEqualToAnchor:self.playerView.bottomAnchor].active = YES;
             
             [self.playerStatus setText:@"플레이어 상태"];
         });
@@ -115,6 +121,7 @@
     self.currentVol = [self.player getVolume];
     
     [self.playerStatus setText: ([self.player isPlaying]) ?  @"재생" : @"플레이어 재생준비 완료"];
+    [self.videoGravityLabel setText:[self.player getVideoGravity]];
 }
 
 - (void)didPlayerItemStatusCompleted {
@@ -268,6 +275,31 @@
             }
         }
     }];
+}
+
+- (IBAction)changeVideoGravity:(UIButton *)sender {
+    [self.pickerView setHidden:NO];
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(nonnull UIPickerView *)pickerView {
+    return 1;
+}
+
+- (NSInteger)pickerView:(nonnull UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return [vGravities count];
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    return [vGravities objectAtIndex:row];
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    [self.pickerView setHidden:YES];
+    
+    NSString *str = [vGravities objectAtIndex:row];
+    [self.videoGravityLabel setText:str];
+    
+    [self.player setVideoGravity:str];
 }
 
 @end

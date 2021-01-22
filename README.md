@@ -86,6 +86,10 @@
     - 음량값
 - (void)setVolume:(CGFloat)volume
     - 음량조절
+- (void)setVideoGravity:(AVLayerVideoGravity)gravity
+    - gravity 설정
+- (AVLayerVideoGravity)getVideoGravity
+    - 설정된 gravity 조회
 
 ### **WCPlayerDelegate**
 - (void)didPlayerItemStatusReadyToPlay
